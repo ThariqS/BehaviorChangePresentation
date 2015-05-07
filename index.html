@@ -15,7 +15,6 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/additional.css">
 		<link rel="stylesheet" href="css/theme/black.css" id="theme">
 
 		<!-- Code syntax highlighting -->
@@ -43,93 +42,187 @@
 			<div class="slides">
 				<section>
 					<h1>Unlocking Sleep</h1>
-					<img src="http://share.gifyoutube.com/vMj3A5.gif">
+					<img class="sleep-img" src="http://share.gifyoutube.com/vMj3A5.gif"/>
 					<p>
 						<small>Thariq Shihipar, Sara Taylor</small>
 					</p>
 				</section>
 
-				<section>
-					<h2>Deployment</h2>
-					<p>
-						reveal.js enables you to create beautiful interactive slide decks using HTML. This presentation will show you examples of what it can do.
-					</p>
+				<!--
+				<section data-background="white">
+						<iframe src="http://unlocksleep.media.mit.edu" style:"width:100vw;height:100vh;"> </iframe>
 				</section>
+			-->
 
-				<section class="white-slide" >
-					<div class="stretch">
-					  <iframe src="http://unlocksleep.media.mit.edu" style="background-color:white" height="100%" width="100%" />
-					</div>
+				<section>
+					<h1>Motivation</h1>
 				</section>
 
 
-
-				<!-- Example of nested vertical slides -->
 				<section>
-					<section>
-						<h2>Vertical Slides</h2>
-						<p>Slides can be nested inside of each other.</p>
-						<p>Use the <em>Space</em> key to navigate through all slides.</p>
-						<br>
-						<a href="#" class="navigate-down">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 1</h2>
-						<p>Nested slides are useful for adding additional detail underneath a high level horizontal slide.</p>
-					</section>
-					<section>
-						<h2>Basement Level 2</h2>
-						<p>That's it, time to go back up.</p>
-						<br>
-						<a href="#/2">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(180deg);">
-						</a>
-					</section>
+					<ol>
+						<li>Sleep is important, and everyone is diffent (n=1) but planning helps</li>
+						<li>Planning requires logging</li>
+						<li>Logging is hard</li>
+					</ol>
 				</section>
 
 				<section>
-					<h2>Slides</h2>
+					<p>We think we can use our unlocks screens to log data & give us feedback on sleep planning.</p>
+				</section>
+
+				<section>
+					<h1>System Overview</h1>
+				</section>
+
+				<section>
+					<h2>How can we scale n-of-1 experiments?</h2>
+					<ul>
+						<li>Real-time data collection & analysis</li>
+						<li>Dynamic feedback on questions</li>
+						<li>Build to generalizable for any behavior change</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Technology</h2>
+					<ol>
+						<li>Firebase</li>
+						<li>Android App</li>
+						<li>Web-interfae</li>
+					</ol>
+				</section>
+
+				<section>
+					<h1>Study Design & Deployment</h1>
+				</section>
+
+				<section>
+					<p>We recruited 19 MIT students with Android phones.</p><p> 6 males, 13 females.</p>
+				</section>
+
+				<section>
+					<h2>Study Outline</h2>
+					<table>
+						<tbody>
+							<tr>
+								<td>Week 1</td>
+								<td>Fill out daily Google Surveys through email</td>
+							<tr>
+							<tr>
+								<td>Weeks 2-3</td>
+								<td>Use the app, answer static questions while unlocking</td>
+							<tr>
+							<tr>
+								<td>Week 4</td>
+								<td>Questions become dynamic based on data collected</td>
+							<tr>
+						</tbody>
+					</table>
+				</section>
+
+				<section>
+					<h2>Questions asked:</h2>
+					<small>(at most 10 questions were asked per day)</small>
+
+					<ol>
+						<li>When do you plan to wake up & go to sleep</li>
+						<li>When did you actually wake up & go to sleep</li>
+						<li>How are you feeling about:</li>
+						<ol>
+							<li>Stress</li>
+							<li>Health</li>
+							<li>Alertness</li>
+							<li>Mood</li>
+						</ol>
+					</ol>
+
+				</section>
+
+				<section>
+ 					<img src="http://share.gifyoutube.com/yE7XD9.gif"></img>
+				</section>
+
+				<section>
+					<h2>Acutal Data Collected</h2>
+					<ol>
+						<li>When & where users unlocked their phones</li>
+						<li>Answers to every question <small>(from this we extrapolate health information)</small></li>
+						<li>How long it took to answer questions</li>
+					</ol>
+				</section>
+
+				<section>
+					<h2>Data Collected</h2>
+					<ul>
+						<li>Days of Data: 442</li>
+						<li>Times Unlocked: 19176</li>
+						<li>Questions Asked: 7511</li>
+						<li>Avg Unlocks/day: 43</li>
+					</ul>
+				</section>
+
+				<section>
+					<h1>Results</h1>
+				</section>
+
+				<section>
+					<h2>People aren't good at planning for sleep</h2>
 					<p>
-						Not a coder? Not a problem. There's a fully-featured visual editor for authoring these, try it out at <a href="http://slides.com" target="_blank">http://slides.com</a>.
+						<blockquote>
+							&ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
+							reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
+						</blockquote>
 					</p>
 				</section>
 
 				<section>
-					<h2>Point of View</h2>
+					<h2>We can help people think about sleep</h2>
 					<p>
-						Press <strong>ESC</strong> to enter the slide overview.
-					</p>
-					<p>
-						Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
+						<blockquote>
+							&ldquo;I like the app in general because I try to track my sleeping patterns, and this helps me remember my sleep by asking often…&rdquo;
+						</blockquote>
 					</p>
 				</section>
 
 				<section>
-					<h2>Touch Optimized</h2>
+					<h2>Unlocking is a very automatic action</h2>
 					<p>
-						Presentations look great on touch devices, like mobile phones and tablets. Simply swipe through your slides.
+						<blockquote>
+							&ldquo;I found myself swiping to unlock without noticing that there was a question&rdquo;
+						</blockquote>
 					</p>
 				</section>
 
-				<section data-markdown>
-					<script type="text/template">
-						## Markdown support
-
-						Write content using inline or external Markdown.
-						Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
-
-						```
-						<section data-markdown>
-						  ## Markdown support
-
-						  Write content using inline or external Markdown.
-						  Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
-						</section>
-						```
-					</script>
+				<section>
+					<h2>Things we don't know</h2>
+					<ul>
+						<li>How can we give feedback using more than just questions?</li>
+						<li>Is it a design problem or an application problem?</li>
+					</ul>
 				</section>
+
+				<section>
+					<h2>Conclusions</h2>
+					<ul>
+						<li>Built a scalable system for asking health related questions</li>
+						<li>Ran a pilot study</li>
+						<li>Got some encouraging data, but mostly inconclusive due to implementation & scale</li>
+					</ul>
+				</section>
+
+				<section>
+					<h1>We're gonna do this again</h1>
+				</section>
+
+				<section>
+					<ol>
+						<li>Improved design & reliability</li>
+						<li>More feedback systems</li>
+						<li>Purely digital consent & installation</li>
+					</ol>
+				</section>
+
 
 				<section>
 					<section id="fragments">
@@ -229,27 +322,6 @@
 				</section>
 
 				<section>
-					<h2>Pretty Code</h2>
-					<pre><code data-trim contenteditable>
-function linkify( selector ) {
-  if( supports3DTransforms ) {
-
-    var nodes = document.querySelectorAll( selector );
-
-    for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
-      var node = nodes[i];
-
-      if( !node.className ) {
-        node.className += ' roll';
-      }
-    }
-  }
-}
-					</code></pre>
-					<p>Code syntax highlighting courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
-				</section>
-
-				<section>
 					<h2>Marvelous List</h2>
 					<ul>
 						<li>No order here</li>
@@ -299,39 +371,18 @@ function linkify( selector ) {
 				</section>
 
 				<section>
-					<h2>Clever Quotes</h2>
+					<h2>Hi</h2>
 					<p>
-						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;The nice thing about standards is that there are so many to choose from&rdquo;</q> and block:
+						Set <code>data-state="something"</code> on a slide and <code>"something"</code>
+						will be added as a class to the document element when the slide is open. This lets you
+						apply broader style changes, like switching the page background.
+
+						<blockquote>
+							&ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
+							reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
+						</blockquote>
+
 					</p>
-					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
-						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
-					</blockquote>
-				</section>
-
-				<section>
-					<h2>Intergalactic Interconnections</h2>
-					<p>
-						You can link between slides internally,
-						<a href="#/2/3">like this</a>.
-					</p>
-				</section>
-
-				<section>
-					<h2>Speaker View</h2>
-					<p>There's a <a href="https://github.com/hakimel/reveal.js#speaker-notes">speaker view</a>. It includes a timer, preview of the upcoming slide as well as your speaker notes.</p>
-					<p>Press the <em>S</em> key to try it out.</p>
-
-					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-					</aside>
-				</section>
-
-				<section>
-					<h2>Export to PDF</h2>
-					<p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>, here's an example:</p>
-					<iframe src="//www.slideshare.net/slideshow/embed_code/42840540" width="445" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
 				</section>
 
 				<section>
@@ -343,17 +394,6 @@ function linkify( selector ) {
 					</p>
 				</section>
 
-				<section data-state="customevent">
-					<h2>State Events</h2>
-					<p>
-						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
-					</p>
-					<pre><code class="javascript" data-trim contenteditable style="font-size: 18px;">
-Reveal.addEventListener( 'customevent', function() {
-	console.log( '"customevent" has fired' );
-} );
-					</code></pre>
-				</section>
 
 				<section>
 					<h2>Take a Moment</h2>
